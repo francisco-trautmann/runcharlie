@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours Charlie !</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/images/patinando.png" type="image/png">
+
+</head>
+
+<body>
+
+    <!-- Son saut -->
+    <audio id="jumpSound" src="assets/sounds/boing.wav" preload="auto"></audio>
+    <audio id="jumpSound2" src="assets/sounds/dog-jump2.wav" preload="auto"></audio>
+
+    <!-- Son +1 -->
+    <audio id="pointsSound" src="assets/sounds/plus.mp3" preload="auto"></audio>
+
+    <!-- Son Mort -->
+    <audio id="looseSound" src="assets/sounds/dog-death1.wav" preload="auto"></audio>
+    <audio id="looseSound2" src="assets/sounds/loose.mp3" preload="auto"></audio>
+
+    <!-- Son Oiseau -->
+    <audio id="birdSound" src="assets/sounds/bird_sound.mp3" preload="auto"></audio>
+
+
+    <div id="gameContainer">
+        <!-- Image de fond -->
+        <img id="backgroundImage" src="assets/images/fond.png" alt="Background Image">
+        <!-- Canvas -->
+        <canvas id="gameCanvas"></canvas>
+    </div>
+
+    <!-- Canvas-->
+    <canvas id="gameCanvas"></canvas>
+
+    <!-- Boutton Restart -->
+    <button id="restartButton" style="position: absolute; top: 42%; left: 50%; transform: translate(-50%, -50%); display: none;">Restart</button>
+
+    <!-- Relie au javascript -->
+    <script type="module" src="js/main.js"></script> 
+
+</body>
+
+</html>
